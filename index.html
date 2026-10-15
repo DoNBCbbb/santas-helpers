@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Santa's Helpers · Christmas Eve Gift Delivery</title>
+<meta name="description" content="We hide the gifts. We deliver them Christmas Eve night. Join the Santa's Helpers waitlist.">
+<style>
+:root{--navy:#1B3A4B;--gold:#C4A35A;--red:#B23A3A;--cream:#FFF8EC;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--navy);color:var(--cream);line-height:1.55}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--gold)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+h2{font-size:1.8rem;text-align:center;margin-bottom:24px}
+.hero{position:relative;overflow:hidden;text-align:center;padding:80px 0 64px;border-bottom:3px solid var(--gold)}
+.hero h1{font-size:2.8rem;margin:10px 0}
+.hero p{font-size:1.15rem;margin-bottom:28px;opacity:.95}
+.stars{font-size:1.6rem;letter-spacing:10px}
+.btn{display:inline-block;background:var(--red);color:#fff;border:none;border-radius:999px;padding:14px 30px;font-size:1.05rem;font-weight:700;text-decoration:none;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.btn:hover{filter:brightness(1.1)}
+.btn:disabled{opacity:.6;cursor:wait}
+.snow{position:absolute;top:-20px;color:#fff;opacity:.7;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.card{background:var(--cream);color:var(--navy);border-radius:14px;padding:20px;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.step{display:flex;gap:16px;align-items:flex-start}
+.num{flex:0 0 44px;height:44px;border-radius:50%;background:var(--gold);color:var(--navy);font:700 1.3rem Georgia,serif;display:flex;align-items:center;justify-content:center}
+.badge{display:block;width:fit-content;margin:0 auto 20px;background:var(--gold);color:var(--navy);font-weight:800;font-size:.8rem;letter-spacing:.5px;padding:6px 14px;border-radius:999px;text-align:center}
+.price{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px dashed #d8c9a3}
+.price:last-child{border-bottom:none}
+.price b{color:var(--red);white-space:nowrap}
+details{background:var(--cream);color:var(--navy);border-radius:12px;margin-bottom:12px;padding:14px 18px}
+summary{font-weight:700;cursor:pointer;font-family:Georgia,serif;font-size:1.05rem}
+details p{margin-top:10px}
+form label{display:block;font-weight:600;margin:12px 0 4px}
+form input[type=text],form input[type=email],form input[type=tel],form input[type=number]{width:100%;padding:12px;border:1px solid #c9b88f;border-radius:8px;font-size:1rem}
+.check{display:flex;gap:10px;align-items:center;margin:16px 0}
+.check input{width:20px;height:20px}
+.hp{position:absolute;left:-9999px}
+#thanks{display:none;text-align:center;font-size:1.15rem;font-weight:600}
+#err{display:none;color:var(--red);font-weight:600;margin-top:12px}
+footer{text-align:center;padding:28px 20px;border-top:3px solid var(--gold);color:var(--gold);font-size:.95rem}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="stars">⭐ 🎁 ❄️</div>
+    <h1>Santa's Helpers</h1>
+    <p>We hide the gifts. We deliver them Christmas Eve night.</p>
+    <a class="btn" href="#book">Join the waitlist</a>
+  </div>
+</header>
+
+<section><div class="wrap">
+  <h2>How it works</h2>
+  <div class="card step"><div class="num">1</div><div><h3>Book online</h3><p>Book online and get your booking ID.</p></div></div>
+  <div class="card step"><div class="num">2</div><div><h3>Send your gifts</h3><p>Ship gifts to our receiving address or drop them off; we tag and store them safely.</p></div></div>
+  <div class="card step"><div class="num">3</div><div><h3>Christmas Eve magic</h3><p>Christmas Eve night we deliver to your door and text you a photo.</p></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Pricing</h2>
+  <span class="badge">SAMPLE PRICING – final prices coming soon</span>
+  <div class="card">
+    <div class="price"><span>Household delivery (includes up to 5 gifts)</span><b>from $45</b></div>
+    <div class="price"><span>Extra gifts</span><b>$4 each</b></div>
+    <div class="price"><span>Gift wrapping</span><b>$6 per gift</b></div>
+    <div class="price"><span>Guaranteed time window</span><b>+$15</b></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>FAQ</h2>
+  <details><summary>Is my stuff safe?</summary><p>Yes. Each gift is photographed and tagged at intake, kept in insured storage, and delivered by background-checked drivers.</p></details>
+  <details><summary>What time do you deliver?</summary><p>Christmas Eve evening into the night. Your delivery window is confirmed by text.</p></details>
+  <details><summary>What if a package arrives late?</summary><p>Please ship by December 18. Late items are delivered December 26.</p></details>
+  <details><summary>What area do you serve?</summary><p>Local only – enter your zip code below and we'll confirm.</p></details>
+  <details><summary>Can you wrap?</summary><p>Yes! Gift wrapping is available as an add-on.</p></details>
+  <details><summary>Is my address private?</summary><p>Your address is used only for delivery and is deleted after the season.</p></details>
+</div></section>
+
+<section id="book"><div class="wrap">
+  <h2>Request your spot</h2>
+  <div class="card">
+    <form id="f" novalidate>
+      <label for="name">Name</label><input type="text" id="name" name="name" required autocomplete="name">
+      <label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email">
+      <label for="phone">Phone</label><input type="tel" id="phone" name="phone" required autocomplete="tel">
+      <label for="zip">Zip code</label><input type="text" id="zip" name="zip" required inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code">
+      <label for="gifts">Number of gifts</label><input type="number" id="gifts" name="gifts" required min="1" value="1">
+      <div class="check"><input type="checkbox" id="wrapping" name="wrapping"><label for="wrapping" style="margin:0">Add gift wrapping ($6 per gift)</label></div>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit" id="sub">Request my spot</button>
+      <p id="err">Sorry, something went wrong. Please try again in a minute.</p>
+    </form>
+    <p id="thanks">🎁 Thanks! You're on the list. We'll text or email you to confirm your spot.</p>
+  </div>
+</div></section>
+
+<footer>Santa's Helpers · Local Christmas Eve gift delivery · © 2026</footer>
+
+<script>
+(function(){
+  for(var i=0;i<18;i++){var s=document.createElement('span');s.className='snow';s.textContent='❄';
+    s.style.left=Math.random()*100+'%';s.style.fontSize=(10+Math.random()*14)+'px';
+    s.style.animationDuration=(8+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*15)+'s';
+    document.getElementById('top').appendChild(s);}
+  var f=document.getElementById('f'),err=document.getElementById('err'),sub=document.getElementById('sub');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();err.style.display='none';
+    if(!f.checkValidity()){f.reportValidity();return;}
+    if(f._honey.value){return;}
+    sub.disabled=true;sub.textContent='Sending…';
+    fetch('https://formsubmit.co/ajax/Prestonarning@yahoo.com',{method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({name:document.getElementById("name").value,email:f.email.value,phone:f.phone.value,zip:f.zip.value,
+        gifts:f.gifts.value,wrapping:f.wrapping.checked?'Yes':'No',
+        _subject:"New Santa's Helpers signup",_template:'table',_honey:f._honey.value})
+    }).then(function(r){return r.json().then(function(d){if(!r.ok||String(d.success)==='false')throw 0;});})
+    .then(function(){f.style.display='none';document.getElementById('thanks').style.display='block';})
+    .catch(function(){err.style.display='block';sub.disabled=false;sub.textContent='Request my spot';});
+  });
+})();
+</script>
+</body>
+</html>
